@@ -7,7 +7,8 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-
+    <Geninfo></Geninfo>
+    <Eduexp></Eduexp>
     <Pracexp></Pracexp>
   </React.StrictMode>,
 )

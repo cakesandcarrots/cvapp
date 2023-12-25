@@ -2,7 +2,8 @@ function Geninfo() {
     return (
         < div >
             <form action="get">
-                <div className="geninfowrapper">
+                <fieldset>
+                    <legend>Add General Infomation</legend>
                     <label htmlFor="name">Name: </label>
                     <input type="text" name="name" id="name" />
                     <br />
@@ -11,7 +12,8 @@ function Geninfo() {
                     <br />
                     <label htmlFor="phoneno">Phone No: </label>
                     <input type="tel" name="phoneno" id="phoneno" />
-                </div>
+
+                </fieldset>
 
             </form>
         </div >
