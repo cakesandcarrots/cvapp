@@ -1,0 +1,28 @@
+.cvwrapper {
+    display: flex;
+
+}
+
+
+.details,
+.display {
+    margin: 1em;
+    flex: 1;
+
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.display {
+    flex-grow: 2;
+    border: 0.1em red solid;
+
+}
+
+.heading {
+
+    display: flex;
+    justify-content: center;
+}

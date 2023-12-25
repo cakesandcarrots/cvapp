@@ -24,6 +24,7 @@ function Pracexp() {
                     <input type="date" name="startdate" id="startdate" onChange={(e) => setStartDate(e.target.value)} />
                     <br />
                     <label htmlFor="enddate">Job left: </label>
+                    <br />
                     <input type="date" name="enddate" id="enddate" onChange={(e) => setEndDate(e.target.value)} />
                     <br />
                     <button>Submit</button>
