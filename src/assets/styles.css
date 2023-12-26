@@ -7,16 +7,15 @@
 .details,
 .display {
     margin: 1em;
-    flex: 1;
 
 }
 
 .details {
-    flex-grow: 1;
+    flex: 1;
 }
 
 .display {
-    flex-grow: 2;
+    flex: 3;
     border: 0.1em red solid;
 
 }
