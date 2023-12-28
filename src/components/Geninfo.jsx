@@ -1,41 +1,29 @@
-import { useState } from "react"
-import Display from "./Display"
-function Geninfo() {
 
-    const [name, setName] = useState("")
-    const [mailid, setMaiid] = useState("")
-    const [phoneNo, setPhoneNo] = useState("")
 
-    function handlesubmit(e) {
+function Geninfo({ dataChange }) {
 
-        e.preventDefault()
-        console.log(name)
-        console.log(mailid)
-        console.log(phoneNo)
-
-    }
     return (
-        < div >
-            <form onSubmit={handlesubmit}>
+        <>
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                dataChange(e.target.name.value, e.target.email.value, e.target.phoneno.value);
+            }}>
                 <fieldset>
-                    <legend>Add General Infomation</legend>
+                    <legend>Add General Information</legend>
                     <label htmlFor="name">Name: </label>
-                    <input type="text" name="name" id="name" onChange={(e) => setName(e.target.value)} />
+                    <input type="text" id="name" />
                     <br />
                     <label htmlFor="email">Email ID:</label>
-                    <input type="email" name="email" id="email" onChange={(e) => setMaiid(e.target.value)} />
+                    <input type="email" id="email" />
                     <br />
                     <label htmlFor="phoneno">Phone No: </label>
-                    <input type="tel" name="phoneno" id="phoneno" onChange={(e) => setPhoneNo(e.target.value)} />
+                    <input type="tel" id="phoneno" />
                     <br />
                     <button type="submit">Submit</button>
-
                 </fieldset>
-
             </form>
-        </div >
-
-    )
+        </ >
+    );
 }
 
-export default Geninfo
+export default Geninfo;
